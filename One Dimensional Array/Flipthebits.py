@@ -38,6 +38,6 @@ def flip(A):                                                            # Passin
     return answer_list                                                  # Returning the answer_list 
 
 
-result=flip('101010')
-print(result)
+result_indexes=flip('101010')
+print(result_indexes)
                     
