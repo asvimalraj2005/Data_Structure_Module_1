@@ -53,7 +53,7 @@ def Spiral_Matrix(A):
             left_layer_end_number=left_layer_end_number+1
         N=N-1
         
-        
+        # The above code is totally wrong ;) Need time to implement properly 
             
         
             
