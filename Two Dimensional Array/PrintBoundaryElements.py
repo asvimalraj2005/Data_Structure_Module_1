@@ -20,4 +20,4 @@ def PrintSpriral(Mat):
 Mat=[[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]
 
 result_print_spiral=PrintSpriral(Mat)
-print(result_print_spiral)
+print(result_print_spiral) 
