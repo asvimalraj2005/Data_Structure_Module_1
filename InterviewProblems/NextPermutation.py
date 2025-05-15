@@ -1,4 +1,4 @@
-# Next Permutation 
+# Next Permutation problem statement 
 # Implement the next permutation, which rearranges numbers into the numerically next greater permutation of numbers for a given array A of size N
 # If such arrangement is not possible, it must be rearranged as the lowest possible order i.e, sorted in ascending order 
 # Note: The replacement must be in-place,do not allocate extra memory 
