@@ -24,23 +24,15 @@
 # Below is the python code 
 #
 #
-<<<<<<< HEAD
 def MergeInterval(Intervals):                                   # Passing the Interval list                                          00  01
-    Start_index=Intervals[0][0]                                 # Storing the Start Index      0,0                                   10  11
-    End_index=Intervals[0][1]                                   # Storing the end Index        0,1                                   20  21
-    N=len(Array)                                                # Using N variable to store the length of the interval list          30  31
-    for i in range(1,N):                                        # Running the loop from the 1st row because we are already stored the row one(0th row as per list index) start index and end index 
-=======
-def MergeInterval(Intervals):                             # Passing the Interval list                                          00  01
     Start_index=Intervals[0][0]                                 # Storing the Start Index      0,0                                   10  11
     End_index=Intervals[0][1]                                   # Storing the end Index        0,1                                   20  21
     N=len(Intervals)                                            # Using N variable to store the length of the interval list          30  31
     for i in range(1,N):                                        # Running the loop from the 1st row because we are stored the row one start index and end index 
->>>>>>> 33c897a (Interview Problem)
         if(Intervals[i][0] <= End_index):                       # Checking if the start index(Interval[i][0]) is less than or equal to end index
-            End_index=max(End_index,Intervals[i][1])            # If does get satisfied we are updating end index by comparing the end index value and with the values iterating over the 01,11,21,31 values of the 2d interval list which are considered as end index 
+            End_index=max(End_index,Intervals[i][1])            # If does get satisfied we are updating end index by comparing the end index value and the iterating 01,11,21,31 values of the 2d interval list 
         else:                                                   # The above condition is to expand the end index only so we can compare the intervals and provide the appropriate start index and end index of the intervals 
-            print(Start_index," , ",End_index)                  # Printing the start index and end index if the 'if condition is not get satisified' of the overall merging(merged intervals from the start to end) intervals   
+            print(Start_index," , ",End_index)                  # Printing the start index and end index if the 'if condition is not get satisified' of the overall merging intervals   
             Start_index=Intervals[i][0]                         # Updating the start index 
             End_index=Intervals[i][1]                           # Updating the end index
     print(Start_index," , ",End_index)                          
