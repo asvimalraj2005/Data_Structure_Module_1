@@ -32,6 +32,9 @@
 # Below is the python code 
 
 
+# In simple we don't we need the while loop it's better to use the sort function for array to get sorted and after that the for loop is executed to check whether the missing element(first natural number) is there or not, if not we are returning the (max of the array)+1
+
+
 def swap(arr, i, j):                                    # This function used to swap the array elements 
     arr[i], arr[j] = arr[j], arr[i]                     # Swapping the elements           
 
