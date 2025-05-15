@@ -1,7 +1,7 @@
 # Next Permutation problem statement 
 # Implement the next permutation, which rearranges numbers into the numerically next greater permutation of numbers for a given array A of size N
 # If such arrangement is not possible, it must be rearranged as the lowest possible order i.e, sorted in ascending order 
-# Note: The replacement must be in-place,do not allocate extra memory 
+# Note: The replacement must be in-place,do not allocate extra memory  
 # Take an 1 D array as an example [ 1 , 2 , 3 ]         -> Think Array as an integer
 #                                 [ 1 , 3 , 2 ]         -> To find just greater number travel right to left and find first no in downtrend
 #                                 [ 2 , 1 , 3 ]         -> Swap it with just greater on right and arrange all elements on right in ascending order 
