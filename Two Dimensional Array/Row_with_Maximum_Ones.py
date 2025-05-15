@@ -31,6 +31,6 @@ def Row_with_Maximum_Ones(Mat):
     else:
         return ans_list[0]  # Return the only row with maximum 1's if only one row is present 
 
-Mat=[[1,1,1,1,1],[1,1,1,1,1],[0,1,1,0,1],[1,1,1,1,1]]
+Mat=[[1,1,1,1,1],[1,1,1,1,1],[0,1,1,0,1],[1,1,1,1,1]]  # Row 1 , row 2 , row 3 
 print(Row_with_Maximum_Ones(Mat))
     
