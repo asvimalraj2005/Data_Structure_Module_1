@@ -21,6 +21,5 @@ def ToggleBit(A,B):
                             #                              16  8  4  2  1 
 A=20                        # Binary representation 20 is   1  0  1  0  0     
 B=1                         #                                        |  <
-Result=ToggleBit(A,B)       #                               1  1  1  1  1 
+Result=ToggleBit(A,B)       #                               1  0  1  1  0   => 22  
 print(Result)
-
