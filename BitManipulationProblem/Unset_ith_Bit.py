@@ -19,11 +19,11 @@ def Unset_ith_Bit(A,B):
     StringFormatVariable=''.join(BinaryList)     # By using 'join' method we are converting back the list format into string and storing the list string converted format into 'StringFormatVariable'
     IntegerFormatVariable=int(StringFormatVariable,2)   # Now we are converting the string contained binary representation to its original integer format 
     return IntegerFormatVariable
-
+                          # Index                                      0  1  2  3  4 
                           #                                           16  8  4  2  1 
 A=20                      # Value A representation in bit format -->  1   0  1  0  0 
-B=3                       # Now B=3                                          <  <  <     we are moving backward by using the formula N-1-B 
-Result=Unset_ith_Bit(A,B) # Consider N=5 B=3 now subtract both of them and with -1 this become 5-1-2 = 2 is the index postion 
+B=3                       # Now B=3                                       |  <  <  <     we are moving backward by using the formula N-1-B, the bit is already unset so we are returning the A itself
+Result=Unset_ith_Bit(A,B) # Consider N=5 B=3 now subtract both of them and with -1 this become 5-1-3 = 1 is the index postion 
 print(Result)                        
 
     
