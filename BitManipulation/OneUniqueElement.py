@@ -24,4 +24,4 @@ print(UniqueElements(Arr))       # Output = 1
 #
 #
 Arr=[2,2,3,3,4,4,5,5,6,6,7,8,8]
-print(UniqueElements(Arr))       # Output = 7 
+print(UniqueElements(Arr))       # Output = 7 *
