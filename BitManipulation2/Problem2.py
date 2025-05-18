@@ -68,8 +68,8 @@ def FindUniqueTwoAmongCommonTwice(A):
     
     # Split the array on the basis of position bit                      # Spitting the array in twice 1
     
-    Ans_1=0                                                             # Ans_1 is initialised to store the first unique element among twice elements present         
-    Ans_2=0                                                             # Ans_2 is initialised to store the second unique element among twice elements present 
+    Ans_1=0                                                             # Ans_1 is initialised to store the first unique element among twice elements present before the pivot      
+    Ans_2=0                                                             # Ans_2 is initialised to store the second unique element among twice elements present after the pivot 
     N=len(A)
     for i in range(N):                                                    
         if ((A[i]&(1<<position))>0):                                    # Traversing until we reach the mid th position         
