@@ -57,25 +57,25 @@ def FindUniqueTwoAmongCommonTwice(A):
     # Finding the XOR of all the elements 
     XORFIRSTELEMENT=0
     for i in range(len(A)):
-        XORFIRSTELEMENT = XORFIRSTELEMENT ^ A[i]
+        XORFIRSTELEMENT = XORFIRSTELEMENT ^ A[i]                        # XOR of all the elements will get stored as XORFIRSTELEMENT
     
     # Find any set bit position in XOR 
     position = -1 
-    for b in range(32):
+    for b in range(32):                                                 # Finding any set bit right most position in the XORFIRSTELEMENT value 
         if (XORFIRSTELEMENT & (1<<b)) > 0 : 
             position = b
             break
     
-    # Split the array on the basis of position bit 
+    # Split the array on the basis of position bit                      # Spitting the array in twice 1
     
-    Ans_1=0
-    Ans_2=0
+    Ans_1=0                                                             # Ans_1 is initialised to store the first unique element among twice elements present         
+    Ans_2=0                                                             # Ans_2 is initialised to store the second unique element among twice elements present 
     N=len(A)
-    for i in range(N):
-        if ((A[i]&(1<<position))>0):
-            Ans_1^=A[i]
+    for i in range(N):                                                    
+        if ((A[i]&(1<<position))>0):                                    # Traversing until we reach the mid th position         
+            Ans_1^=A[i]                                                 # Finding the first unique and assigning the first unique to the ans_1 variable 
         else : 
-            Ans_2^=A[i]
+            Ans_2^=A[i]                                                 # So on 
     
     return Ans_1,Ans_2
 
