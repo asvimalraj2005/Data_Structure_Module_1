@@ -18,14 +18,16 @@
 # After this count the 1's present inside the BinaryList Array and return the count 
 # Below is the python code for the above passage 
 def GoodBehavedDays(A):
-    C=format(A,'b')
-    BinaryList=list(C)
-    count=0
-    for bit in BinaryList:
-        if bit=='1':
+    C=format(A,'b')                     # Conversion of Integer to String binary representation happens here by using the format function 
+    BinaryList=list(C)                  # Converting the C variable which stores the string binary representation is converted into list named BinaryList 
+    count=0                             # Count Variable is initialised here 
+    for bit in BinaryList:              # Traversing over the BinaryList array using the bit iterator 
+        if bit=='1':                    # While in the process of iteration if bit == '1' then the count variable will get increased by 1 
             count=count+1
-    return count
+    return count                        # After that we are returning the count of bits 
 
-A=34
-Result=GoodBehavedDays(A)
+A=34                                    # Example A = 34 --> Binary Representation 64  32  16  8  4  2  1 
+Result=GoodBehavedDays(A)               #                                           0   1   0  0  0  1  0     count=2       
 print(Result)
+
+# Yep same concept of the basics will get applied everywhere 
