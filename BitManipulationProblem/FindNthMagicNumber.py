@@ -15,11 +15,15 @@ def NthMagicNumber(A):
     return result                           # Returning the result 
 
 Result=NthMagicNumber(10)                   # Explanation loop with the iterator i with run from 1 to 32  
-                                            # Indexes LSB to MSB(Reverse)  6   5   4   3  2  1  0 
+print(Result)                               # Indexes LSB to MSB(Reverse)  6   5   4   3  2  1  0 
                                             # Indexes LSB to MSB           0   1   2   3  4  5  6       
                                             # Bit range representation     64  32  16  8  4  2  1  
                                             # A=10(Binary Representation)  0   0   0   1  0  1  0 
-print(Result)                               # i=0  --> 10&(1<<i)                                .           (None = . )  and (Set = | )                    
+                                            # i=0  --> 10&(1<<i)                                .           (None = . )  and (Set = | )                    
                                             # i=1  --> 10&(1<<i)                             |
                                             # i=2  --> 10&(1<<i)                          .     
                                             # i=3  --> 10&(1<<i)                       | 
+                                            # where i = 1 ; result = result + 5**( i + 1 )     0 = 0 + 5**( i + 1 )  -->   0 = 0 + 5**( 1 + 1 )  -->  5**2  --> 25 --> result = 25  
+                                            # where i = 3 ; result = result + 5**( i + 2 )     25 = 25 + 5**( i + 1 ) -->  25 = 25 + 5**( 3 + 1 ) --> 5**4  --> 625 --> 25 = 25 + 625 --> result becomes 650 
+                                            # After this loop will be executed until it reaches 31 and till 31 there is no set bit so the if condition does not passes and moves into the condtion 
+                                            # The value stored inside the loop will get returned to the caller variable after the loop execution ends 
