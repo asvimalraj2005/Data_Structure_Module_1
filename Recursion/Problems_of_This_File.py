@@ -15,9 +15,16 @@
 # Sum ( N ) = Sum ( N - 1 ) + N 
 # Below is code for the above problem 
 def SumofRange(N):
-    if (N==1):
+    if (N==1):                                 # Base case condition
         return 1 
-    return SumofRange( N - 1 ) + N 
+    return SumofRange( N - 1 ) + N             # Calling function SumofRange again and again until we reach the base case 
 
-Result=SumofRange(10)
+Result=SumofRange(10)                          # Returned value will get stored here 
 print(Result)
+
+
+# The problems are 
+# Factorial of N 
+# Printing numbers in Increasing order
+# Printing numbers in decreasing order 
+# Fibonacci sequence 
