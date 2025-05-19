@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Problem Statement 
 # Given a number A, we need to find the sum of it's digits using recursion
 # Input format : The first and only argument is an integer A 

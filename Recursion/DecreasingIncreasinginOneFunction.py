@@ -8,23 +8,23 @@
 # Input Format : The first line contains a single integer N
 # Output Format : A single line having number printed from N to 1 and then from 1 to N 
 # Below is the python code
-def DecFunction(A):
+def DecFunction(A):                                # Creating a function that is used for printing 10 to 1 
     if A == 0 :
         return 1
     else : 
-        print(A,end=' ')
+        print(A,end=' ')                           # Printing of the values will be done here without being get to stored in the main function 
         DecFunction(A-1)
     
-def IncFunction(A):
+def IncFunction(A):                                # Creating a function that is used for printing 1 to A
     if A == 0 : 
         return 1 
     else :
         IncFunction(A-1)
-        print(A,end=' ')
+        print(A,end=' ')                            # Same here too printing of the number from 1 to A will be done here without being stored or returned to the main function 
 
-def DecThenInc(A):
-    DecFunction(A)
-    IncFunction(A)
+def DecThenInc(A):                                  
+    DecFunction(A)                                  # Calling the Decreasing Print Function 
+    IncFunction(A)                                  # After the call of DecFunction and it's work , then IncFunction will be called 
 
 print(DecThenInc(10))
 
