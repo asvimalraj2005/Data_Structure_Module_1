@@ -11,7 +11,7 @@ def FactorialofaNumber(A):
         return 1 
     else:
         return A*FactorialofaNumber(A-1)    # Until we reach the base condition the else condition will be used for calculation of the factorial of a number bycalling the function itself with minimal values 
-#
+# 
 #
 # 5 factorial = 5 * 4 * 3 * 2 * 1  => 120
 Result = FactorialofaNumber(10) 
