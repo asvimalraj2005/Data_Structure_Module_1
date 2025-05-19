@@ -12,7 +12,7 @@
 # Explanation => F(2) = F(1) + F(0) =1 
 # Below is the python code for the above problem statement 
 def FibonacciofaNumber(A):
-    if A <= 1 :                                                                     # Base Case Condition
+    if A <= 1 :                                                                     # Base Case Condition 
         return A 
     else :
         return FibonacciofaNumber ( A - 1 ) + FibonacciofaNumber ( A - 2)           # Formula used for calculation of Nth Fibonacci Number 
