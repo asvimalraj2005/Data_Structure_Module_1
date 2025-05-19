@@ -15,6 +15,8 @@ def Sum_of_Digits(A):
         Total_Sum=Last_Digit+Total_Sum(A//10)           # using the Total_Sum variable for summing up the digits in A , again calling the Sum_of_Digits with removing the last digit
         
         return Total_Sum                                # After calculation we are returning the total sum calculated to the main function 
-    
+
+Result=Sum_of_Digits(10)
+print(Result)
 
         
