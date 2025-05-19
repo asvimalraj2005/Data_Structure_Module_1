@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Problem Statement 
 # Given a number A, we need to find the sum of it's digits using recursion
 # Input format : The first and only argument is an integer A 
@@ -17,5 +16,5 @@ def Sum_of_Digits(A):
         
         return Total_Sum                                # After calculation we are returning the total sum calculated to the main function 
     
-
-        
+Result=Sum_of_Digits(2233)
+print(Result)
