@@ -9,13 +9,17 @@
 # B = 5 
 # O/P : [ 2 , 4 , 5 ]
 # Below is the python code for the above problem statements 
-def allIndices(A,B):
-    def helper(index):
-        if index==len(A):
+def allIndices(A,B):                                    # An array and an index is provided here 
+    def helper(index):                                  # Helper function is used for indexing purpose   
+        if index==len(A):                               # Inside the index function, Base case : when the recursion reaches past the last index, it returns an empty list 
             return []
-        rest=helper(index+1)
-        if A[index]==B:
-            return [index]+rest
+        rest=helper(index+1)                            # Recursively call the helper function for the next index 
+        if A[index]==B:                                 # If the current element matches with the B element 
+            return [index]+rest                         # [index]  contains the index where the element with the index is getting matched with B and rest is the result of the recursive call 
         else:
-            return rest
-    return helper(0)        
+            return rest                                 
+    return helper(0)                                    # Start the recursion from index 0 
+
+A=['1','2','3','4','5','6']
+B=5
+print(allIndices(A,B))
