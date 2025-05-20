@@ -48,9 +48,13 @@ def PrintArray(A):
         return 
     else:
         Index_0_th_Element=0
-        print(A[0])
-        A.pop(0)
+        print(A[0])    
+        A.remove(A[0])                            
         PrintArray(A)
+
+A=['1','2','3','4','5','6','7']
+PrintArray(A)
+
 
 A=['1','2','3','4','5','6','7']
 PrintArray(A)
