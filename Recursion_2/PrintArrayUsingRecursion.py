@@ -12,6 +12,7 @@ def PrintArray(A):
     Index_Variable_Iterator=0                           # For every function call this variable resets to zero , if the signature of function can be changeable than it's easy to implement the code with out any errors or worry 
     if N==0 or Index_Variable_Iterator==N :
         return 
+        
     else: 
         
         print(A[0])
@@ -40,6 +41,7 @@ def PrintArray(A):                  # Main Signature Function : only Argument pa
 A=['8','7','6','5','4','3','2','1']
 PrintArray(A)
 
+
 # Approach three where the element is removed before getting removed it got printed with the help of the recursion 
 def PrintArray(A):
     if len(A)==0:
@@ -52,6 +54,5 @@ def PrintArray(A):
 
 A=['1','2','3','4','5','6','7']
 PrintArray(A)
-
 
     

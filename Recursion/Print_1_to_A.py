@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f9ee2efd0cff758ff0e0499ffd45c486ba339ef
 # Prolem Statement
 # Print A to 1 function
 # You are given an integer A ,print A to 1 using recursion 

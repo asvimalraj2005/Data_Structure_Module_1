@@ -12,9 +12,17 @@ def Sum_of_Digits(A):
         return 1
     else:
         Last_Digit=A%10                                 # Getting the last digit from the A 
-        Total_Sum=Last_Digit+Total_Sum(A//10)           # using the Total_Sum variable for summing up the digits in A , again calling the Sum_of_Digits with removing the last digit
+        Total_Sum=Last_Digit+Sum_of_Digits(A//10)        # using the Total_Sum variable for summing up the digits in A , again calling the Sum_of_Digits with removing the last digit
         
         return Total_Sum                                # After calculation we are returning the total sum calculated to the main function 
+<<<<<<< HEAD
     
 Result=Sum_of_Digits(2233)
 print(Result)
+=======
+
+Result=Sum_of_Digits(10)
+print(Result)
+
+        
+>>>>>>> 7f9ee2efd0cff758ff0e0499ffd45c486ba339ef
