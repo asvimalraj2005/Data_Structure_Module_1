@@ -6,11 +6,12 @@
 #        Print a new empty line after printing the output 
 # Below is the python code for the above problem statement 
 # For to access the element inside the given array we should use index variable and increment by 1 until we reach the Length of the array 
+# Skip the below approach and code 
 def PrintArray(A):
     N=len(A)
     Index_Variable_Iterator=0                           # For every function call this variable resets to zero , if the signature of function can be changeable than it's easy to implement the code with out any errors or worry 
     if N==0 or Index_Variable_Iterator==N :
-        return 1
+        return 
     else: 
         
         print(A[0])
@@ -37,6 +38,19 @@ def PrintArray(A):                  # Main Signature Function : only Argument pa
     
 
 A=['8','7','6','5','4','3','2','1']
+PrintArray(A)
+
+# Approach three where the element is removed before getting removed it got printed with the help of the recursion 
+def PrintArray(A):
+    if len(A)==0:
+        return 
+    else:
+        Index_0_th_Element=0
+        print(A[0])
+        A.pop(0)
+        PrintArray(A)
+
+A=['1','2','3','4','5','6','7']
 PrintArray(A)
 
 
