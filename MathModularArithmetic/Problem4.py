@@ -30,7 +30,7 @@ def MaxGCDofanArrayByDeletingOnebyOne(A):               # Ain't a good code func
     N=len(A)
     
     for i in range(N):                                  # Outer Loop for every i the element is removed 
-        temp=A[:i]+A[i+1]                               # The i th element is removed here and element is stored inside the temp list so that it will not modify the original list  
+        temp=A[:i]+A[i+1:]                               # The i th element is removed here and element is stored inside the temp list so that it will not modify the original list  
         g=temp[0]                                       # Storing the first element in temp 
         for j in range(1,len(temp)):                    # For every i iteration , j will iterate from 0 to N-1 of the array 
             g=GCD(g,temp[j])                            # Calculating the GCD 
