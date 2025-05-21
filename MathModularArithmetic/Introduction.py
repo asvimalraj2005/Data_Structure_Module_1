@@ -1,3 +1,4 @@
+
 # An Introduction about modulo 
 # Modulo % Operator 
 # A % B => Remainder when A is divided by B 
@@ -39,4 +40,6 @@
 #                                                         |---------------------->  1 ^ 103 % 12 = 1 % 12 = 1
 # => ( 1 - 1 + 12 ) % 12 = 12 % 12 = 0 (Ans)
 #
+
+
 
