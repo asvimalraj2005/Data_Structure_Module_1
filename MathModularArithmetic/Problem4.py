@@ -1,3 +1,4 @@
+
 # Problem Statement 
 # Given an integer array A of size N. You have to delete one element such that the 
 # GCD(Greatest Common Divisor) of the remaining array is maximum 
