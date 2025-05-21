@@ -36,10 +36,10 @@
 # Below is the python code for the calculating the Greatest Common Divisor by using recursion 
 # 
 def GCD(A,B):
-    if B==0:
-        return A
+    if B==0:                            # Base Case Condition
+        return A                        # If B == 0 we return A because gcd(A,0)-> A or gcd(0,B)-> B 
     else:
-        return GCD(B,A%B)
+        return GCD(B,A%B)               # Recursively calling GCD function 
     
 A=2345678
 B=456687348523856
