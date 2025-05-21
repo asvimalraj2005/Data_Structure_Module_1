@@ -17,5 +17,5 @@ def EntireGCD(A):
     
     return g                                        # Total GCD of the array is calculated and returned 
 
-A=[1,2,3,4,5,6,7]                                   # I think the GCD is 2 
+A=[1,2,3,4,5,6,7]                                   # I think the GCD is 1
 print(EntireGCD(A))
