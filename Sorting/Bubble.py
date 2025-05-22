@@ -18,12 +18,16 @@ def BubbleSort(A):                              # Creating the function named Bu
 
 A=[8,7,6,5,4,4,5,6,4,3]
 print(BubbleSort(A))
-print(len(A))
                                                 # Below is explanation 
+                                                # Indexes                  0   1   2   3   4   5   6   7   8   9 
                                                 # let us take an example [ 8 , 7 , 6 , 5 , 4 , 4 , 5 , 6 , 4 , 3 ]            N = len ( A ) -> 10
                                                 # for i in range(N)        i
                                                 #                          swapped=False
-                                                # for j in range(0,N-i-1)
-
-
-            
+                                                # for j in range(0,N-i-1) 
+                                                # the condition 0,N-i-1 says that 0 to 10-0-1 which is index 9 now we are traversing from 0 to 8 inclusively 
+                                                # if A [ j ] > A [ j + 1 ] :  this condition checks the current element is greater than or not , if it is greater than we are swapping the elements 
+                                                # A [ j ] , A [ j + 1 ] = A [ j + 1] , A [ j ] swaps the two element 
+                                                # after swapping still the swapped=True it indicates that the array is still not sorted 
+                                                # So there should be i iterations for the array to get sorted 
+                                                # After that we are returning the array A 
+    
