@@ -52,9 +52,9 @@ def merge_sort(A,left,right):         # Merge function is divide the array until
     
 
 A=[12,11,13,5,6,7]
-merge_sort(A,0,len(A)-1)
-print(A)
-    
+merge_sort(A,0,len(A)-1)                                              # merge_sort(A,left,mid)        will be repeatedly called and stored into the stack till left < right satisfies with the values of merge_sort(A,left,mid)
+print(A)                                                              # merge_sort(A,mid+1,right)     will be repeatedly called after the dividing of the elements in the left half and now the right half elements is divided with left already divided elements in the stack, after the division of every element which is already stored and got stored after the right half divide where the value which is stored inside the stack is pushed towards to the mergesort function 
+                                                                      # mergesort(A,left,mid,right)   will be called here where every divided or splitted elements will get merged here
         
         
         
