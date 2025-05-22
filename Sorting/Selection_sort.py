@@ -34,4 +34,3 @@ print(selection_sort(A))
                                                     #
                                                     # Now the array looks like this -->                   [ 3 , 4 , 5 , 6 , 4 , 5 , 8 , 7 , 6 ] 
                                                     #
-                                                    # So on the iteration will takes place until the outer loop reaches the end of the array
