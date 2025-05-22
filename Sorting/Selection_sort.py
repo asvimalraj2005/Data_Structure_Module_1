@@ -20,3 +20,18 @@ def selection_sort(A):                              # Creating a function named 
 
 A=[12,12,4,3,56,7,8,5,3,2,3,5,7,8]
 print(selection_sort(A))
+                                                    # Indexes                                               0   1   2   3   4   5   6   7   8
+                                                    # Explanation let us take an example array            [ 6 , 5 , 4 , 3 , 4 , 5 , 8 , 7 , 6 ]
+                                                    #
+                                                    # Outer loop -> for i in range(N-1) -> Now i = 0        i                                         Now min_ind stores the index of this element i.e 0 -> 0 we get stored in the min_ind                                
+                                                    # Inner loop -> for j in range(i+1,N) -> Now j = i + 1      j ---------------------------->       Now j is here now -> if A [j] < A [min_ind]  :   this condition checks that for every j element with i element -> 5 < 6 ; 4 < 6 ; 3 < 6 ; 4 < 6 ; 5 < 6 ; 8 < 6 ; 7 < 6 ; 6 < 6    for this all comparison we are going to take only element from it and swap it i.e 3 with 6 the index value of 3 is 3 which is going to be stored in min_ind variable 
+                                                    # After completing the inner loop this condition will work  A[0] , A [3]  =  A [3] , A [0]  ->  3 , 6 
+                                                    #
+                                                    # Now the array becomes like this -->                 [ 3 , 5 , 4 , 6 , 4 , 5 , 8 , 7 , 6 ] 
+                                                    # Outer loop -> for i in range(N-1) ->  Now i =1            i                                     As I said before for every i iteration j would excute from i+1,n
+                                                    # Inner loop -> for j in range(i+1,N) -> Now j = i + 1          j ------------------------>       Now j is here now -> if A [j] < A [min_ind]  :  which is comparing all the values of iteration j with iteration i element once, 4 < 5 , 6 < 5 , 4 < 5 , 5 < 5 , 8 < 5 , 7 < 5 , 6 < 5  for all this comparison we are going take the first satisfying element which satisfies the condition which 4 < 5 and the index value of 4 is 2 
+                                                    # After completing the inner loop this condition will work  A[1] , A[2] = A[2] , A[1] -> 4 , 5
+                                                    #
+                                                    # Now the array looks like this -->                   [ 3 , 4 , 5 , 6 , 4 , 5 , 8 , 7 , 6 ] 
+                                                    #
+                                                    # So on the iteration will takes place until the outer loop reaches the end of the array
