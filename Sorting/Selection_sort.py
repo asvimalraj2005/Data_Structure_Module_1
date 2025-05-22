@@ -1,4 +1,4 @@
-# Selection sort is a versus based sorting algorithm. It sorts an array by repeatedly selecting the smallest element from the unsorted portion and swapping it with the first unsorted element.
+# Selection sort is a versus based sorting algorithm. It sorts an array by repeatedly selecting the smallest element from the unsorted portion and swapping it with the first unsorted element. 
 # Procedure find the min in the array and replace the min value in the first index and swap the first index element at where you have found the min value 
 # Reference take an example array : [ 5 , 4 , 3 , 2 , 1 ] in this array 1 is the min value and we should have to swap the element 5 with 1 
 # Now the array becomes [ 1 , 4 , 3 , 2 , 5 ] -> first iteration is completed 
