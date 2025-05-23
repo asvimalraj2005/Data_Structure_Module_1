@@ -27,4 +27,16 @@ print(Sub_Array_Sum(A))                         # This array returns the stateme
 
 # The above is an iterative approach 
     
-            
+# Below is an hash set method where we can simple find the sub array sum with 1 
+# We are going use dictionary set for the storing of the elements inside it 
+def HashMap_Total_Sum(A):
+    Set_1=set()
+    total_sum=0
+    for i in range(len(A)):
+        total_sum=total_sum+A[i]
+        if total_sum==1 or (total_sum in Set_1):
+            return "Yes there is sub-array"
+        Set_1.add(total_sum)
+
+A = [1,-1]                                      # It prints of "Yes there is sub-array"
+print(A)
