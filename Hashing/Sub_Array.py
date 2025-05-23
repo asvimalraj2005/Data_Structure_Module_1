@@ -5,10 +5,10 @@
 # Input Format : The only argument given is the integer array A 
 # Output Format : Return whether the given array contains a subarray with a sum equal to 1 
 # 
-# Input A = [ 1 , 2 , 3 , 4 , 5 ]        -> Sub array looks like this [1] [2] [3] [4] [5] [1,2] [1,2,3] [1,2,3,4] [1,2,3,4,5] [2] [2,3] [2,4] [2,5] [3] [3,4] [3,4,5] [4] [4,5]      No sub array has zero sum 
+# Input A = [ 1 , 2 , 3 , 4 , 5 ]        -> Sub array looks like this [1] [2] [3] [4] [5] [1,2] [1,2,3] [1,2,3,4] [1,2,3,4,5] [2] [2,3] [2,4] [2,5] [3] [3,4] [3,4,5] [4] [4,5]      No sub array has sum one 
 # Output : 0
 #
-# Input A = [ 4 , -1 , 1 ]               -> Sub array for this array looks like [4] [-1] [1]  [-1,1]  [1]  [4,-1,1]    The [-1,1]  has the sum of zero so this array has sub-array sum zero 
+# Input A = [ 4 , -1 , 1 ]               -> Sub array for this array looks like [4] [-1] [1]  [-1,1]  [1]  [4,-1,1]    The [-1,1]  has the sum of zero so this array has sub-array sum one
 # Output : 1 
 #
 #
