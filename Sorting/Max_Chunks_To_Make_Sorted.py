@@ -48,3 +48,10 @@ def max_chunks_to_sorted(A):
 
 A = [1,2,3,4,0,5,6]                             # Note : This algorithmic approach is built on pattern wise on the section of permutation where no duplicate elements are not allowed in the list, if any duplicates elements is present inside the array then this algorithm won't work properly 
 print(max_chunks_to_sorted(A))
+
+
+# Well the number representatively whole numbers 0,1,2,3,4,5,6,7,8,9 to infinity without any repetative values in them 
+# This numbers are put or created with it inside the list 
+# where this could be in any permutation 1 , 9 , 8 , 7 , 6 , 5 , 4 , 3 , 2 , 0 
+#                                        8 , 7 , 6 , 5 , 4 , 3 , 2 , 0 , 1 , 9 
+# on the second list we are going to carry 8 valued element from index 0 to the index where it matches with the index 8, if it matches then we are assuming or counting that here a chunk i.e partition could be made to sort the array 
