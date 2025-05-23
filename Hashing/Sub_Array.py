@@ -32,11 +32,11 @@ print(Sub_Array_Sum(A))                         # This array returns the stateme
 def HashMap_Total_Sum(A):
     Set_1=set()
     total_sum=0
-    for i in range(len(A)):
-        total_sum=total_sum+A[i]
-        if total_sum==1 or (total_sum in Set_1):
+    for i in range(len(A)):                                    # Iterating the array by using for loop 
+        total_sum=total_sum+A[i]                               # Summing up the elements 
+        if total_sum==1 or (total_sum in Set_1):               # If total_sum = 1 or the calculated sum is already in Set_1 then we print "Yes there is sub-array" 
             return "Yes there is sub-array"
-        Set_1.add(total_sum)
+        Set_1.add(total_sum)                                   # After the summing of i to N elements we are adding the value to the Set_1 
 
 A = [1,-1]                                      # It prints of "Yes there is sub-array"
 print(A)
