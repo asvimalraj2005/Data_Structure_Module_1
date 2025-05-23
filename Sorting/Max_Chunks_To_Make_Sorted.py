@@ -54,4 +54,8 @@ print(max_chunks_to_sorted(A))
 # This numbers are put or created with it inside the list 
 # where this could be in any permutation 1 , 9 , 8 , 7 , 6 , 5 , 4 , 3 , 2 , 0 
 #                                        8 , 7 , 6 , 5 , 4 , 3 , 2 , 0 , 1 , 9 
+<<<<<<< HEAD
 # on the second list we are going to carry 8 valued element from index 0 to the index where it matches with the index 8, if it matches then we are assuming or counting that here a chunk i.e partition could be made to sort the array 
+=======
+# on the second list we are going to carry 8 valued element from index 0 to the index where it matches with the index 8, if it matches then we are assuming or counting that here a chunk i.e partition could be made to sort the array 
+>>>>>>> bab9d719827d35b3e1987c8fc41acee379023787
