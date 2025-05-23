@@ -1,3 +1,4 @@
+
 # Problem Statement 
 # Given two sorted integer arrays A and B, merge B and A as one sorted array and return it as an output
 # Note : A linear time complexity is expected and you should avoid use of any library function.
@@ -67,5 +68,6 @@ def MergeSorted(A,B):
     return empty_list                               # Returning the empty_list nope the name may convey different meaning here but it has the values of the array A and array B in sorted manner 
 
     
-    
-
+A=[1,2,3,4,5]
+B=[1,2,3,4,5]
+print(MergeSorted(A,B))
