@@ -13,7 +13,7 @@
 # Below is the python code for the above approach 
 def DistinctElements(A):
     Ans_ = set ( A )
-    return len( Ans_ )       
+    return len( Ans_ )                        #  <------------ Returning the length of unique elements found in the array 
 
     # return Ans_                             #  <------------ If you want to return the founded unique elements in the list 
 
