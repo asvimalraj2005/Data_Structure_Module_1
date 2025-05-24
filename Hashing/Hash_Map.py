@@ -1,4 +1,5 @@
 
+
 # Hash Map Introduction 
 # It is an index based data structure 
 # We can able to calculate the index of the element value by using the same element value and by using hash function 
