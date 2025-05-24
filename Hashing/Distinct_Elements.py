@@ -13,9 +13,13 @@
 # Below is the python code for the above approach 
 def DistinctElements(A):
     Ans_ = set ( A )
-    # return len( Ans_ )       
+    return len( Ans_ )       
 
-    return Ans_                            #  <------------ If you want to return the founded unique elements in the list 
+    # return Ans_                             #  <------------ If you want to return the founded unique elements in the list 
 
 A=[1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5]
 print(DistinctElements(A))
+
+
+# This is one way of hashing approach but in depth there are different coding types where real hashing code is implemented 
+# like usage of several functions within a class and adding elements through hash functions 
