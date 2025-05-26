@@ -1,6 +1,6 @@
 # Problem Statement 
 # Given two integer arrays, A and B of size N and M, respectively. Your task is to find all the common elements in both the array
-# Note : Each element in the result should appear as many times as it appears in both array 
+# Note : Each element in the result should appear as many times as it appears in both array   
 # The result can be in any order
 # Input Format : First argument is an integer array A of size N
 #                Second argument is an integer array B of size M
@@ -15,6 +15,8 @@
 # Iterate over Array_1 check whether the Array_1 element is present inside the Array_2 are not if present in the Array_2 then append to the ans_list 
 # Create an ans_list for storing of an element which is present in both of the array 
 # Below is the program for the above approach
+
+# This code does not follow the rules of Each element in the result should appear as many times as it appears in both arrays.
 def SameElements(A,B):
     Array_1=set(A)              # <-- Through this process we are removing the duplicate elements 
     Array_2=set(B)              # <-- Through this process we are removing the duplicate elements 
@@ -26,5 +28,5 @@ def SameElements(A,B):
 
 A=[1,2,2,1]
 B=[2,3,1,2]
-print(SameElements(A,B))
+print(SameElements(A,B)) 
     
