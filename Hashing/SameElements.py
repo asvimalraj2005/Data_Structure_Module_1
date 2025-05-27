@@ -21,7 +21,7 @@ def SameElements(A,B):
     Array_1=set(A)              # <-- Through this process we are removing the duplicate elements 
     Array_2=set(B)              # <-- Through this process we are removing the duplicate elements 
     ans_list=[]
-    for element in Array_1:
+    for element in Array_1:    
         if element in Array_2:
             ans_list.append(element)
     return ans_list
