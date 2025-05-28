@@ -7,9 +7,6 @@
 # 6 1 4 2 
 # 7 8 4 
 # No of subarrays = N * ( N + 1 ) / 2 
-# for i in range(len(A))
-#   for j in range(i,len(i)):
-#       for k in range(i,len(A)):
 # 
 # Given an array find the sum of all subarray
 # Example array = {3,2,5}
