@@ -34,7 +34,7 @@ def Maximum_Subarray(A,B,C):                    # Where A is the array , B is th
             sum=0                               # sum loop iterates from 0 to u+1
             for b in range(s,u+1):         
                 sum=sum+A[b]                    # summing up the elements 
-            if sum==B:                          # if the summing element array equals to B
+            if sum==B:                          # if the summing element values from s to u + 1 range does equals to B
                 return 1                        # Return 1   
     return 0                                    # if not sum of B is not found in the array then we return 0
 
