@@ -14,16 +14,35 @@
 # After storing, remove the element from the modified array,
 # add the stored element in the 0'th index of the modified array 
 # 
-def TensDigits(A):
-    A.sort()
-    A.reverse()
-    min_val=min(A)
-    min_index=A.index(min_val)
-    A.pop(min_index)
-    A.insert(0,min_val)
-    return A 
+def TensDigits(A):                             # My approach 
+    A.sort()                                   # Sorting the array 
+    A.reverse()                                # Reversing the array     
+    min_val=min(A)                             # Finding the minimum value in the array 
+    min_index=A.index(min_val)                 # Finding the minimum value's index in the array 
+    A.pop(min_index)                           # Removing the element by using pop method 
+    A.insert(0,min_val)                        # Insering the element at the index 0
+    return A                                   # Returning the array 
 
 A=[15,11,7,19]
 print(TensDigits(A))
+
+
+# Method 2 
+from functools import cmp_to_key              # Importing a module named cmp_to_key from the functools library 
+
+def compare(x,y):                              # passing value x and value y to the compare function
+    tens_x=(x//10)%10                          # Dividing the value by 10 and storing the last digit by using % operator 
+    tens_y=(x//10)%10
+    if tens_x!=tens_y:                         # If not same 
+        return tens_x-tens_y                   # returning the tens_x - tens_y
+    else:   
+        return y-x                             # if same returning the y-x
+
+def tens_digit_sort_cmp(A):                    # Main function 
+    return sorted(A,key=cmp_to_key(compare))   # Returning the sorted compared array to the main function
+
+
+A=[10,20,32,5,63,56]
+print(tens_digit_sort_cmp(A))
        
     
