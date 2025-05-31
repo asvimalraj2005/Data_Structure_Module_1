@@ -14,7 +14,10 @@ def Solve(A):                           # The string is passed to the Solve func
     for ch in A:                        # Traversing A string variable 
         if ch.islower():                # If any alphabet is lower in the ch iterator 
             result+=ch.upper()          # We are appending the alphabet to the result by using upper() function 
+<<<<<<< HEAD
             
+=======
+>>>>>>> 74973f2aa4ae02848f1c7dd559706885675d7bec
         elif ch.isupper():              # If any alphabet is upper in the ch iterator
             result+=ch.lower()          # we are appending the alphabet to the result by using lower() function 
         else:
