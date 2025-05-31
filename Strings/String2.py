@@ -31,5 +31,3 @@ def Solve(A):
 A = "aeiOUz"
 print(Solve(A))  
 
-
-
