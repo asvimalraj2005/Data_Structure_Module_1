@@ -9,13 +9,17 @@
 # Below is the program code to change the lower case alphabets to upper case alphabets 
 # and uppercase alphabets to lower case alphabets 
 # 
-def Solve(A):
-    N=A.len()
-    for i in range(N):
-        if A[i]>='A' and A[i]<='Z':
-            A[i]=A[i]+32
+def Solve(A):                           # The string is passed to the Solve function 
+    result = ''                         # Creating an empty variable where there are no alphabets is stored 
+    for ch in A:                        # Traversing A string variable 
+        if ch.islower():                # If any alphabet is lower in the ch iterator 
+            result+=ch.upper()          # We are appending the alphabet to the result by using upper() function 
+            
+        elif ch.isupper():              # If any alphabet is upper in the ch iterator
+            result+=ch.lower()          # we are appending the alphabet to the result by using lower() function 
         else:
-            A[i]=A[i]-32
-    return A 
-A="Vimal Raj"
-print(Solve(A))
+            result+=ch                  # if it is a special case we are appending 
+    return result                       # Returning the result 
+
+A = "Data Structure"
+print(Solve(A))  # Output: "dATA sTRUCTURE"
