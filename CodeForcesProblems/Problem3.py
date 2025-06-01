@@ -28,3 +28,6 @@ def solve():                                  # Here an function named solve is 
            print("NO")                        # Else NO is printed out from the else block 
 
 solve()
+
+
+https://codeforces.com/problemset/problem/1722/A
