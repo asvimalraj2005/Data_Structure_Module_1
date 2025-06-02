@@ -10,8 +10,44 @@
 # YES if the string in the corresponding test case is square
 # NO otherwise 
 # Below is the solution for the above problem
-def CheckSquare(A):
-    str_one=str(A+A)
-    print(str_one)
+                                     # This does require a two-pointer approach where the given string length is divided by 2 
+                                     # where the first pointer is used to start from first index of the strign and the second is used to start from the middle of the string index 
+                                     # first pointer moves until it reaches the half of the string index length
+                                     # second pointer moves until it reaches the end of the string index length 
+def CheckString():
+    t=int(input())
+    for _ in range(t):
+        A=input()
+        pointer_1=0
+        pointer_2=len(A)//2
+        N=len(A)
+        for i in range(len(A)):
+            if A[pointer_1]!=A[pointer_2]:
+                print("NO")
+            else:
+                print("YES")
+                pointer_1=pointer_1+1
+                pointer_2=pointer_2+1
 
-CheckSquare("One")
+# The code above will not work for certain conditions due to logical indexing issue 
+# Below is the correct code for the problem statement 
+def CheckString():                                          
+    t = int(input())                                        # T test cases 
+    for _ in range(t):                                      # Iterator for T test cases 
+        s = input()                                         # String variable s 
+        n = len(s)                                          # String length n
+        if n % 2 != 0:                                      # Odd square length is not a perfect square 
+            print("NO")                                     # Prints NO
+            continue                                        # Skipping the iteration process 
+        half = n // 2                                       # If it is even dividing the length of the string into two equal halves 
+        if s[:half] == s[half:]:                            # String slicing 
+            print("YES")                                    # If it is same YES will be printed on the screen 
+        else:
+            print("NO")                                     # If don't NO 
+
+
+https://codeforces.com/problemset/problem/1619/A
+
+
+
+
