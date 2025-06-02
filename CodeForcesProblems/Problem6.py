@@ -1,4 +1,3 @@
-# Ultra Fast Mathematician
 # Shapur was an extremely gifted student. He was great at everything including combinatorics,algebra,number theory, geometry,
 # Calculus etc. He was not only smart but extraordinary fast ! He could manage to sum 10^18 numbers in a single second 
 # One day in 230 AD shapur was trying to find out if any one can possibly do calculations faster than him. As a result he made
@@ -18,9 +17,15 @@
 # Write one the corresponding answer. Do not omit the leading 0's 
 # Below is the program for the above problem statement 
 def Bitwise():
-    a=int(input())
-    b=int(input())
-    c=a^b
-    print(c)
-
+    a = input()                                 # Getting the inputs 
+    b = input()                                 
+    result = []                                 # Resultant array 
+    for i in range(len(a)):                     # Loop 
+        if a[i] != b[i]:                        # if not same append 1 to the result,           1^1=0  1^0=1   0^0=0  0^1=1
+            result.append('1')
+        else:
+            result.append('0')                  # if does same append 0 to the result, 
+    print(''.join(result))
 Bitwise()
+
+https://codeforces.com/problemset/problem/61/A
