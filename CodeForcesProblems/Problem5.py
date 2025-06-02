@@ -46,5 +46,8 @@ def CheckString():
             print("NO")                                     # If don't NO 
 
 
+https://codeforces.com/problemset/problem/1619/A
+
+
 
 
