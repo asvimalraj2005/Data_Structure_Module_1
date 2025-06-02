@@ -28,4 +28,5 @@ def Bitwise():
     print(''.join(result))
 Bitwise()
 
-https://codeforces.com/problemset/problem/61/A
+# https://codeforces.com/problemset/problem/61/A
+
