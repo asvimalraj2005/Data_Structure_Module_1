@@ -29,5 +29,5 @@ def solve():                                  # Here an function named solve is 
 
 solve()
 
-
-https://codeforces.com/problemset/problem/1722/A
+#
+# https://codeforces.com/problemset/problem/1722/A
