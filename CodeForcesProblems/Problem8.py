@@ -18,18 +18,16 @@
 #                  0
 #            O/P: EASY              <-- Reasin for easy because there is no 1 which represents hard
 # Problem Approach
-# N no of people are the test cases those people will be considered as t 
-# where by using a placeholder the for loop will be executed until t times 
 # Below is the problem solution code which comprises correctly to the above problem statement 
-def Problem():
-    test_cases = int ( input () )
-    list_containing_zeros_and_ones = [ ] 
-    for  _  in range ( test_cases ) : 
-        a=int(input())
-        list_containing_zeros_and_ones.append(a)
+def problem():      
+    n = int(input())                                    # <-- This n input represents no of users 
+    opinions = list(map(int, input().split()))          # <-- By using list and map function we are getting multiple numbers as input , splitting them and storing into list named opinions 
+    if 1 in opinions:                                   # <-- If any 1 found in the opinions list then the answer will be HARD
+        print("HARD")   
+    else:   
+        print("EASY")                                   # <-- If not one is not found in the opinions list then the answer will be EASY 
 
-    for i in range(len(list_containing_zeros_and_ones)):
-        if list_containing_zeros_and_ones[i]==1:
-            print("Hard")
-            break
+problem()                                               # <-- Calling the function to get executed 
     
+
+# https://codeforces.com/problemset/problem/1030/A
