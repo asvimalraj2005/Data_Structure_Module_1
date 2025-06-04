@@ -26,7 +26,7 @@ def DivisibilityProblem():
     t=int(input())
     for _ in range(t):
         a=int(input())
-        b=int(input())                        # <-- a , b input lines can be converted into ' a,b = map(int(input().split())) '
+        b=int(input())               .         # <-- a , b input lines can be converted into ' a,b = map(int(input().split())) '
         count=0                               # Incrementing by one is counted by the count variable 
         while(a%b!=0):                        # until a is perfectly divides by b we are incrementing the value of a 
             a=a+1                           
