@@ -21,3 +21,4 @@ def Problem():
             print("Yes")
         else:
             print("No")
+# https://codeforces.com/problemset/problem/1742/A 
