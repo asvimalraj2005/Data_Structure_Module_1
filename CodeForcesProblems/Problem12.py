@@ -37,16 +37,16 @@ def day_at_the_beach():
     blocks = 0
     for i in range(n):
         if a[i] in freq_a:
-            freq_a[a[i]] += 1        # If present we are incrementing the count by one
+            freq_a[a[i]] += 1        # If present we are incrementing the count by one, where if a[i] i.e from the original array we are calculating the frequency 
         else:
-            freq_a[a[i]] = 1         # If new just 1 
+            freq_a[a[i]] = 1         # If new just 1, if the element in the original array is not in the frequency array of a we are inserting the a[i] and the frequency of the value to the frequency array 
                                      # Count in sorted list
-        if b[i] in freq_b:
+        if b[i] in freq_b:           # The array b is sorted, where the same approach on above is followed here 
             freq_b[b[i]] += 1
         else:
             freq_b[b[i]] = 1
                                     # If both frequency maps match, we can split here
-        if freq_a == freq_b:
+        if freq_a == freq_b:        # frequency of them both matches the will be partition can be done 
             blocks += 1
 
     print(blocks)                   # Printing the maximum no of blocks 
