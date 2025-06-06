@@ -5,14 +5,14 @@
 def Problem19():
     t=int(input())
     for _ in range(t):
-        n=int(input())
-        s=input()
-        list_s=list(s)
-        list_s.pop(0)
-        list_s.append('1')
-        list_s=''.join(list_s)
-        decimal_number=int(list_s,2)
-        print(decimal_number)
+        n=int(input())                          # Length of the input 
+        s=input()                               # Binary String 
+        list_s=list(s)                          # Converting the stirng into list
+        list_s.pop(0)                           # Removing the first element 
+        list_s.append('1')                      # Appending '1' to the last index 
+        list_s=''.join(list_s)                  # removing the quotes 
+        decimal_number=int(list_s,2)            # converting the list of binary number into decimal 
+        print(decimal_number)                   # Printing them onto the user's screen 
         
 
 Problem19()
