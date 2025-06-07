@@ -4,13 +4,11 @@
 def Problem21():
     t=int(input())
     for _ in range(t):
+        n=int(input())
         a=list(map(int,input().split()))
-        n=len(a)
-        list_set=set(a)
-        n1=len(list_set)
-        if n1==1:
-            print("No")
+        if len(set(a))==1:
+            print("NO")
         else:
-            print("Yes")
+            print("YES")
 
 Problem21()
