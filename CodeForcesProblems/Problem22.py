@@ -17,12 +17,12 @@ def Problem22():
         b_array_element=list_slice_B[i]
         for j in range(len(list_slice_A)):
             a_array_element=list_slice_A[j]
-            if a_array_element>=b_array_element:
+            if a_array_element>=b_array_element:            # A array elements should be smaller than B elements 
                 Greater=True
                 print("No")
-                break
+                break                                       # Breaking out of the inner loop 
         if Greater:
-            break
+            break                                           # Breaking out of the outer loop 
     if not Greater:
         print("YES")
    
