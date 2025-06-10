@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> intermediate-one
 # Problem Description
 # Akash likes playing with strings. One day he thought of applying following operations 
 # on the string in the given order 
@@ -32,5 +35,8 @@ def Solve(A):
 A = "aeiOUz"
 print(Solve(A))  
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> intermediate-one
