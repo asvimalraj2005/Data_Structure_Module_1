@@ -21,34 +21,6 @@ def Problem27():
     print(count)
 
 Problem27()                                                         # The above code is implemented by me 
-<<<<<<< HEAD
-=======
-
-                                       
-# Online referrence code 
-
-def Problem27():
-    t = int(input())
-    for _ in range(t):
-        n = int(input())          # <- Length of the array 
-        s = input()
-        num_array = [int(digit) for digit in s] 
-        count = 0       
-        for l in range(n):                              # Outer loop: 'l' for the starting index of the subarray
-            for r in range(l, n):                       # Inner loop: 'r' for the ending index of the subarray
-                sum_var = 0  # Reset sum for each new subarray
-                # Calculate sum of elements from index l to r
-                for m in range(l, r + 1): # Iterate from l to r (inclusive)
-                    sum_var += num_array[m]
-                # Calculate the length of the subarray (r - l + 1)
-                length_var = r - l + 1 
-                # Check if the sum equals the length
-                if sum_var == length_var:
-                    count += 1
-        print(count)
-
-Problem27()                
->>>>>>> 51a1281 (Problem28)
 
                                        
 # Online referrence code 
