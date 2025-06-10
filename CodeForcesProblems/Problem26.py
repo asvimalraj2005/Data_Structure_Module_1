@@ -1,6 +1,6 @@
 # Square Year
 # https://codeforces.com/problemset/problem/2114/A
-def Problem2():
+def Problem26():
     t=int(input())                  # <-- No of test cases
     for _ in range(t):              
         a=int(input())              # <-- Input number from the user 
@@ -13,8 +13,11 @@ def Problem2():
             else:
                 a2=a2+1                             # Half proper binary search 
         
-    
-#Problem26()           
+
+Problem26()
+
+# Approach 2 
+           
 
 def Problem26():
     t = int(input())                                # Number of test cases
@@ -31,6 +34,6 @@ def Problem26():
         if found:
             print(a1,a2)
         else:
-            print("NO")
+            print(-1)
 
 Problem26()
